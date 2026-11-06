@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - CSE-2340</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 min-h-screen p-6">
+  <header id="top-nav" class="max-w-4xl mx-auto flex justify-between items-center bg-white p-4 rounded shadow mb-6">
+    <!-- CONFLICT DEMO LINE: Member 1 and Member 2 will both edit the h1 line below -->
+    <h1 class="text-xl font-bold text-slate-800">CSE-2340 Learning Portal</h1>
+    <div class="flex items-center gap-4">
+      <span id="user-display" class="text-sm text-slate-600">Loading user...</span>
+      <button id="logout-btn" class="bg-red-500 text-white px-3 py-1 rounded text-sm">Sign Out</button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto space-y-6">
+    <section id="module-1" class="bg-white p-4 rounded shadow"></section>
+    <section id="module-2" class="bg-white p-4 rounded shadow"></section>
+    <section id="module-3" class="bg-white p-4 rounded shadow"></section>
+  </main>
+
+  <script type="module" src="/src/dashboard.js"></script>
+</body>
+</html>
